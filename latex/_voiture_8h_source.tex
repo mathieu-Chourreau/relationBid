@@ -1,0 +1,50 @@
+\doxysection{Voiture.\+h}
+\hypertarget{_voiture_8h_source}{}\label{_voiture_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ \ Spécifie\ une\ classe\ Voiture\ en\ relation\ réciproque\ avec\ son\ conducteur}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ Auteur\ :\ Lopistéguy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ \ Version\ :\ 0.1}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ \ Date\ :\ 12/08/2022}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ VOITURE\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ VOITURE\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_individu_8h}{Individu.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_individu}{Individu}};\ \textcolor{comment}{/*\ Annonce\ une\ définition\ ultérieure\ de\ Individu}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ permet\ de\ faire\ référence\ aux\ membres\ de\ Individu\ dans\ la\ classe\ Voiture\ */}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ Spécification\ de\ la\ classe\ Voiture}}
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_voiture}{Voiture}}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ ATTRIBUTS}}
+\DoxyCodeLine{00023\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{string}\ imat;\ \textcolor{comment}{//\ L'imatriculation\ de\ la\ voiture}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{string}\ marque;\ \textcolor{comment}{//\ La\ marque\ de\ la\ voiture}}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_individu}{Individu}}\ *monPilote;\ \textcolor{comment}{//\ Implémente\ un\ bon\ lien}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ METHODES}}
+\DoxyCodeLine{00029\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Constructeur}}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_voiture}{Voiture}}(\textcolor{keywordtype}{string}\ =\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{keywordtype}{string}\ =\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ Destructeur}}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_voiture}{\string~Voiture}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ Méthodes\ usuelles\ :\ toString}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{string}\ toString();\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Affiche\ les\ caractéristiques\ de\ la\ voiture}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{string}\ toStringAndLink();\ \textcolor{comment}{//\ Affiche\ les\ caractéristiques\ de\ la\ voiture\ et\ de\ son\ pilote\ s'il\ est\ défini}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ Methodes\ spécifiques\ :\ majMonPilote,\ supprimerLien,\ setMonPilote}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ majMonPilote(\mbox{\hyperlink{class_individu}{Individu}}*\ pilote);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ setMonPilote(\mbox{\hyperlink{class_individu}{Individu}}*\ pilote);}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ supprimerLien();}
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VOITURE\_H}}
+
+\end{DoxyCode}
